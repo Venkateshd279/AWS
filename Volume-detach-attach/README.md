@@ -1,7 +1,7 @@
 # This is the document about detaching EBS Volume from the AWS EC2 Instance and Attach to the New Instance
 
 # SAME AVAILABILITY ZONE METHOD
-# CONDTIONS:
+# CONDITIONS:
 
 - It should be on the same availability zone - both instance
 
