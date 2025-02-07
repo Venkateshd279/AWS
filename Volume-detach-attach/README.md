@@ -15,7 +15,7 @@
 
 # Step 2: Connect to the New Instance
 
-ssh -i your-key.pem ec2-user@your-instance-ip
+## ssh -i your-key.pem ec2-user@your-instance-ip
 
 # Step 3: Identify the Attached Volume
 
