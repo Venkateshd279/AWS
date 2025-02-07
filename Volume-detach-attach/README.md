@@ -8,10 +8,10 @@
 
 # Step 1: Attach the Volume to the New Instance
 
-Go to the EC2 Dashboard → Volumes in the AWS console.
-Select the volume you want to attach.
-Click Attach Volume and choose the target EC2 instance.
-Specify a device name (e.g., /dev/xvdf for Linux).
+- Go to the EC2 Dashboard → Volumes in the AWS console.
+- Select the volume you want to attach.
+- Click Attach Volume and choose the target EC2 instance.
+= Specify a device name (e.g., /dev/xvdf for Linux).
 
 # Step 2: Connect to the New Instance
 
