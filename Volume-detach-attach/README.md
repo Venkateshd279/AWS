@@ -19,14 +19,14 @@
 
 # Step 3: Identify the Attached Volume
 
-lsblk
+## lsblk
 
 # Step 4: Create a Mount Point
 
-sudo mkdir /mnt/newroot
+##  sudo mkdir /mnt/newroot
 
 # Step 5: Mount the Volume
 
-sudo mount /dev/xvdf1 /mnt/newroot
+##  sudo mount /dev/xvdf1 /mnt/newroot
 
 
