@@ -1,21 +1,12 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "CloudFormation template to create an S3 bucket"
 
-Parameters:
-  BucketName:
-    Type: String
-    Description: "Name of the S3 bucket"
-    MinLength: 3
-    MaxLength: 63
-    AllowedPattern: "^[a-zA-Z0-9-]*$"
-    ConstraintDescription: "Bucket name must be between 3 and 63 characters long and contain only lowercase letters, numbers, and hyphens."
-
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
     Properties:
       BucketName: "my-cloudformation-bucket-devops-pro-junction"
-      AccessControl: Private
+      AccessControl: Private # PublicRead, PublicReadWrite, AuthenticatedRead, LogDeliveryWrite, BucketOwnerRead, BucketOwnerFullControl
       LifecycleConfiguration:
         Rules:
           - Id: ExpireOldObjects

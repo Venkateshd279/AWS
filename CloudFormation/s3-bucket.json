@@ -1,0 +1,23 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+      "MyS3Bucket": {
+        "Type": "AWS::S3::Bucket",
+        "Properties": {
+          "BucketName": "devops-pro-junction-bucket-11022025",
+          "VersioningConfiguration": {
+            "Status": "Suspended"
+          }
+        }
+      }
+    },
+    "Outputs": {
+      "BucketName": {
+        "Description": "Name of the newly created S3 bucket",
+        "Value": {
+          "Ref": "MyS3Bucket"
+        }
+      }
+    }
+  }
+  
