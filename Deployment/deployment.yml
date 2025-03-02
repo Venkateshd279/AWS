@@ -1,0 +1,30 @@
+# kubectl apply -f deployment.yml // Create deployment object
+# kubectl get deployments // List deployments
+# kubectl get pods // List pods
+# kubectl describe deployment nginx-deployment // Get deployment details
+# kubectl rollout status deployment/nginx-deployment. // Check rollout status
+# kubectl get pods --show-labels // Show labels for pods
+# kubectl rollout history deployment/nginx-deployment 
+# kubectl scale deployment/nginx-deployment --replicas=5 // Scale deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2  #nginx:1.16.1
+        ports:
+        - containerPort: 80
